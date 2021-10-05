@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'iconsfont';
+  src:  url('/iconfont/iconsfont.eot?ujuhuj');
+  src:  url('/iconfont/iconsfont.eot?ujuhuj#iefix') format('embedded-opentype'), 
+        url('/iconfont/iconsfont.ttf?ujuhuj') format('truetype'), 
+        url('/iconfont/iconsfont.woff?ujuhuj') format('woff'), 
+        url('/iconfont/iconsfont.svg?ujuhuj#iconsfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, 
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconsfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-menu:before {
+  content: "\f0c9";
+}
+.icon-email:before {
+  content: "\f0e0";
+}
+.icon-file-text-o:before {
+  content: "\f0f6";
+}
+.icon-file-text:before {
+  content: "\f15c";
+}
+.icon-ig:before {
+  content: "\f16d";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-copyright:before {
+  content: "\f1f9";
+}
+.icon-scale:before {
+  content: "\f24e";
+}
