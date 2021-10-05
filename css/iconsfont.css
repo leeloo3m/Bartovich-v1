@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'iconsfont';
-  src:  url('/iconfont/iconsfont.eot');
+  /* src:  url('/iconfont/iconsfont.eot'); */
   src:  url('/iconfont/iconsfont.eot') format('embedded-opentype'), 
         url('/iconfont/iconsfont.ttf') format('truetype'), 
         url('/iconfont/iconsfont.woff') format('woff'), 
