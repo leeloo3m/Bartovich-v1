@@ -676,6 +676,12 @@ main {
   }
 }
 
+@media (max-width: 634px) {
+  .review__caption {
+    min-height: 6rem;
+  }
+}
+
 @media (max-width: 480px) {
   .review__caption {
     min-height: 0rem;
@@ -744,6 +750,7 @@ main {
   .map {
     position: static;
     margin-top: 60px;
+    overflow: hidden;
   }
 }
 

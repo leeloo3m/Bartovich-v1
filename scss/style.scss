@@ -420,6 +420,9 @@ main{
 		@media (max-width: 768px){
 			min-height: 4rem;
 		}
+		@media (max-width: 634px){
+			min-height: 6rem;
+		}
 		@media (max-width: 480px){
 			min-height: 0rem;
 		}	
@@ -465,6 +468,7 @@ main{
 	@media (max-width:768px){
 		position: static;
 		margin-top: 60px;
+		overflow: hidden;
 	}
 	&__label{
 		position: absolute;
@@ -736,9 +740,6 @@ main{
 			left: 0;
 			width: 100%;
 			}
-		}
-		
-	}
-	
-	
+		}	
+	}	
 }
