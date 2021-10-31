@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'iconsfont';
-  /* src:  url('/iconfont/iconsfont.eot'); */
-  src:  url('../iconfont/iconsfont.eot') format('embedded-opentype'), 
-        url('../iconfont/iconsfont.ttf') format('truetype'), 
-        url('../iconfont/iconsfont.woff') format('woff'), 
-        url('../iconfont/iconsfont.svg') format('svg');
+  src:  url('../fonts/iconsfont.eot?nh5cz7');
+  src:  url('../fonts/iconsfont.eot?nh5cz7#iefix') format('embedded-opentype'),
+    url('../fonts/iconsfont.ttf?nh5cz7') format('truetype'),
+    url('../fonts/iconsfont.woff?nh5cz7') format('woff'),
+    url('../fonts/iconsfont.svg?nh5cz7#iconsfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]::before, 
-[class*=" icon-"]::before {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'iconsfont' !important;
   /* speak: never; */
@@ -32,6 +31,9 @@
 .icon-phone:before {
   content: "\f095";
 }
+.icon-arrow-circle-up:before {
+  content: "\f0aa";
+}
 .icon-menu:before {
   content: "\f0c9";
 }
@@ -46,6 +48,12 @@
 }
 .icon-ig:before {
   content: "\f16d";
+}
+.icon-long-arrow-left:before {
+  content: "\f177";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
 }
 .icon-vk:before {
   content: "\f189";
