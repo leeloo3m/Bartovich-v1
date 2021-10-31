@@ -117,7 +117,7 @@ body {
 }
 
 .policy a:hover {
-  color: element;
+  color: brown;
 }
 
 .caption {
@@ -140,6 +140,13 @@ body {
   border-right: 5px solid brown;
 }
 
+@media (max-width: 768px) {
+  .caption {
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+  }
+}
+
 .caption h1, .caption h2 {
   display: block;
   font-size: 2rem;
@@ -147,9 +154,21 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .caption h1, .caption h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .caption h1, .caption h2 {
+    text-align: left;
+    line-height: 1.8rem;
+  }
+}
+
 .caption i {
   color: brown;
-  opacity: 0.9;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
@@ -193,6 +212,18 @@ body {
 
 section {
   margin-bottom: 10rem;
+}
+
+@media (max-width: 1024px) {
+  section {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 0rem;
+  }
 }
 
 /* HEADER --------------------------------------------- */
@@ -449,12 +480,6 @@ main {
           box-shadow: 0 0 0.7rem grey;
 }
 
-/*@media (max-width:768px){
-	.mainIndex{
-		margin-top: 7rem;
-	}
-	
-}*/
 .indexForm {
   width: 100%;
   height: 100%;
@@ -551,6 +576,24 @@ main {
   padding-bottom: 1rem;
 }
 
+@media (max-width: 480px) {
+  .review__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .review {
+    display: block;
+  }
+  .review__item {
+    width: 100%;
+  }
+  .review__wrap {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
 .review__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +623,18 @@ main {
           box-shadow: 0px 0px 20px 0px brown;
 }
 
+@media (max-width: 768px) {
+  .review__wrap {
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review__wrap {
+    margin: 0.5rem 1rem;
+  }
+}
+
 .review__caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,6 +662,24 @@ main {
 .review__caption i {
   color: brown;
   margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .review__caption {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .review__caption {
+    min-height: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review__caption {
+    min-height: 0rem;
+  }
 }
 
 .review__footer {
@@ -648,11 +721,30 @@ main {
   line-height: 1.5rem;
 }
 
+@media (max-width: 1024px) {
+  .review__text {
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review__text {
+    min-height: 90px;
+  }
+}
+
 /* MAIN contact ----------------------------------------*/
 .map {
   margin-top: 20px;
   min-height: 600px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .map {
+    position: static;
+    margin-top: 60px;
+  }
 }
 
 .map__label {
@@ -662,6 +754,13 @@ main {
   background-color: black;
   opacity: 0.8;
   padding: 5rem;
+}
+
+@media (max-width: 768px) {
+  .map__label {
+    position: static;
+    padding: 3rem;
+  }
 }
 
 .map__list {
@@ -730,6 +829,21 @@ main {
           align-items: baseline;
 }
 
+@media (max-width: 480px) {
+  .contactForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contactForm a {
   text-decoration: underline;
 }
@@ -752,6 +866,12 @@ main {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: -2rem;
+}
+
+@media (max-width: 480px) {
+  .contactForm button {
+    margin-top: 2rem;
+  }
 }
 
 .contactForm button i {
@@ -847,7 +967,7 @@ main {
     border-radius: 0px;
   }
   .container {
-    margin-top: 9rem;
+    margin-top: 3rem;
   }
   .headermobile {
     display: -webkit-box;
@@ -947,6 +1067,9 @@ main {
 }
 
 @media (max-width: 480px) {
+  .caption {
+    margin: 2rem auto;
+  }
   .indexsection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
