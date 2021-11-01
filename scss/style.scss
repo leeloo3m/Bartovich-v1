@@ -484,15 +484,19 @@ main{
 	}
 }
 /* MAIN contact ----------------------------------------*/
-
 .map{
 	margin-top: 20px;
-	min-height: 600px;
+	// min-height: 600px;
 	position: relative;
-	@media (max-width:768px){
+	@media (max-width:480px){
 		position: static;
 		margin-top: 60px;
-		overflow: hidden;
+	}
+	&__body{
+		height: 600px;
+		@media (max-width:768px){
+			height: 400px;
+		}
 	}
 	&__label{
 		position: absolute;
@@ -534,6 +538,9 @@ main{
 	margin-bottom: 4rem;
 	& .policy{
 		margin-top: 2rem;
+		@media (max-width:480px){
+			margin: 0;
+		}
 	}
 }
 .contactForm{
@@ -556,11 +563,14 @@ main{
 	&__item{
 		background-color: transparent;
 		font-size: 1.1rem;
-		padding: 0 1rem;
+		padding: 1rem;
 		border-bottom: 2px solid $element;
 		width: 100%;
 		height: 4rem;
-		margin: 0rem 1rem;	
+		margin: 0rem 1rem;
+		@media (max-width:480px) {
+			margin-bottom: 2rem;
+		}
 	}
 	& button{
 		border: none;
@@ -570,10 +580,12 @@ main{
 		transition: all 0.3s ease;
 		margin-top: -2rem;
 		@media (max-width:480px){
-			margin-top: 2rem;
+			margin-top: 0rem;
+			width: 80%;
 		}
 		& i{
 			margin-left: 0.5rem;
+			color: $element;
 		}
 		&:hover{
 			box-shadow: 0 0px 10px $shadowColor;

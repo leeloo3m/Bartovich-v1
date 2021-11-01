@@ -792,15 +792,23 @@ main {
 /* MAIN contact ----------------------------------------*/
 .map {
   margin-top: 20px;
-  min-height: 600px;
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .map {
     position: static;
     margin-top: 60px;
-    overflow: hidden;
+  }
+}
+
+.map__body {
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .map__body {
+    height: 400px;
   }
 }
 
@@ -866,6 +874,12 @@ main {
   margin-top: 2rem;
 }
 
+@media (max-width: 480px) {
+  .contactFormBody .policy {
+    margin: 0;
+  }
+}
+
 .contactForm {
   width: 100%;
   height: 100%;
@@ -908,11 +922,17 @@ main {
 .contactForm__item {
   background-color: transparent;
   font-size: 1.1rem;
-  padding: 0 1rem;
+  padding: 1rem;
   border-bottom: 2px solid brown;
   width: 100%;
   height: 4rem;
   margin: 0rem 1rem;
+}
+
+@media (max-width: 480px) {
+  .contactForm__item {
+    margin-bottom: 2rem;
+  }
 }
 
 .contactForm button {
@@ -927,12 +947,14 @@ main {
 
 @media (max-width: 480px) {
   .contactForm button {
-    margin-top: 2rem;
+    margin-top: 0rem;
+    width: 80%;
   }
 }
 
 .contactForm button i {
   margin-left: 0.5rem;
+  color: brown;
 }
 
 .contactForm button:hover {
