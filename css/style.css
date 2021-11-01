@@ -1114,18 +1114,24 @@ main {
     transition: all 0.3s ease-out;
   }
   .headermobile__burger.active {
-    color: white;
-    background-color: brown;
+    color: brown;
+    background-color: white;
   }
   .headermobile__nav {
     position: fixed;
     z-index: 1;
     top: 0%;
     left: 100%;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     height: 100%;
     width: 51%;
-    background-color: brown;
+    background-color: white;
     margin-top: 60px;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -1152,8 +1158,23 @@ main {
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
-    color: white;
+    color: black;
     text-transform: uppercase;
+    font-weight: bold;
+  }
+  .headermobile__logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .headermobile__social {
+    margin: 0px auto;
+    margin-top: 40px;
+  }
+  .headermobile__social i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: brown;
   }
 }
 
