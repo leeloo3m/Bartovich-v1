@@ -1140,6 +1140,8 @@ main {
     left: 49%;
     z-index: 1;
     overflow: auto;
+    -webkit-box-shadow: -2px 0px 10px 0px grey;
+            box-shadow: -2px 0px 10px 0px grey;
   }
   .headermobile__list {
     display: -webkit-box;

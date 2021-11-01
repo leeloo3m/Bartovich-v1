@@ -720,10 +720,12 @@ main{
 			background-color: $mainLight;
 			margin-top: 60px;
 			transition: all 0.2s ease-out;
+			
 			&.active{
 				left: 49%;
 				z-index: 1;
 				overflow: auto;
+				box-shadow: -2px 0px 10px 0px $shadowColor;
 			}
 		}
 		&__list{
