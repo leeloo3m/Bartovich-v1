@@ -824,7 +824,7 @@ main {
 @media (max-width: 768px) {
   .map__label {
     position: static;
-    padding: 3rem;
+    padding: 2rem;
   }
 }
 
@@ -832,6 +832,13 @@ main {
   color: white;
   font-size: 1.3rem;
   line-height: 2rem;
+}
+
+@media (max-width: 480px) {
+  .map__list {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
 }
 
 .map__social {
@@ -844,6 +851,12 @@ main {
   color: white;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+}
+
+@media (max-width: 480px) {
+  .map__social i {
+    font-size: 1.5rem;
+  }
 }
 
 .map__social i:hover {

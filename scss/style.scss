@@ -507,13 +507,17 @@ main{
 		padding: 5rem;
 		@media (max-width:768px) {
 			position: static;
-			padding: 3rem;
+			padding: 2rem;
 		}
 	}
 	&__list{
 		color: $mainLight;
 		font-size: 1.3rem;
 		line-height: 2rem;
+		@media (max-width:480px){
+			font-size: 1.1rem;
+			line-height: 2rem;
+		}
 	}
 	&__social{
 		margin-top: 2rem;
@@ -522,6 +526,9 @@ main{
 			font-size: 2rem;
 			color: $mainLight;
 			transition: 0.3s all ease;
+			@media (max-width:480px){
+				font-size: 1.5rem;
+			}
 			&:hover{
 				color: $element;
 			}
