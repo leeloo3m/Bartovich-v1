@@ -66,8 +66,11 @@ body{
 .container{
 	width: 70%;
 	margin: 0 auto;
-	@media screen and (max-width: 1024px) {
+	@media (max-width: 1024px) {
 		width: 90%;
+	}
+	@media (max-width:768px) {
+		margin-top: 60px;
 	}
 }
 .policy{
@@ -101,7 +104,7 @@ body{
 			font-size: 1.5rem;
 		}
 		@media (max-width: 480px){
-			text-align: left;
+			text-align: center;
 			line-height: 1.8rem;
 		}
 	}
@@ -114,10 +117,16 @@ body{
 .textblock{
 	margin: 4rem auto;
 	width: 80%;
+	@media (max-width:480px) {
+		width: 90%;
+	}
 	&>*{
 		font-size: 1.1rem;
 		line-height: 2rem;
 		padding: 1rem 0;
+		@media (max-width:480px) {
+			line-height: 1.5rem;
+		}
 	}
 	&__caption{
 		color: $mainDark;
@@ -133,6 +142,9 @@ body{
 	&__text{
 		padding-left: 4rem;
 		margin-top: -1rem;
+		@media (max-width:480px) {
+			padding-left: 0rem;
+		}
 		& p{
 			margin-top: 1rem;
 		}
@@ -243,6 +255,9 @@ footer{
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
+	@media (max-width:768px) {
+		height: 60px;
+	}
 	
 }
 .footer__items{
@@ -277,10 +292,14 @@ main{
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-start;
-}
-.mainIndex{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+	@media (max-width:480px) {
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
+}
+.mainIndex{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -306,6 +325,9 @@ main{
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		align-items: center;
+		@media (max-width:768px) {
+			padding: 0rem 2rem 2rem 0;
+		}
 		&__text{
 			font-size: 1.15rem;
 			font-weight: 500;
@@ -324,18 +346,20 @@ main{
 			width: 100%;
 			height: 4rem;
 			margin-bottom: 4rem;
-			
+			@media (max-width:768px) {
+				margin-bottom: 2rem;
+			}	
 		}
 		& button{
+			width: 80%;
 			border: none;
 			background-color: $mainDark;
 			color: $mainLight;
 			font-size: 1.2rem;
 			transition: all 0.3s ease;
-			margin-top: -2rem;
-			// text-transform: uppercase;
 			& i{
 				margin-left: 0.5rem;
+				color: $element;
 			}
 			&:hover{
 				box-shadow: 0 0px 10px $shadowColor;
@@ -346,7 +370,7 @@ main{
 			
 		}
 		& .policy{
-			margin-top: -2rem;
+			margin-top: 0rem;
 		}
 }
 
@@ -625,9 +649,6 @@ main{
 			border-radius: 0px;
 		}
 	}
-	.container{
-		margin-top: 3rem;
-	}
 	.headermobile{
 		display: flex;
 		z-index: 5;
@@ -636,7 +657,7 @@ main{
 		align-items: center;
 		width: 100%;
 		height: 60px;
-		padding: 0rem 2rem;
+		padding: 0rem 0rem;
 		font-size: 1.3rem;
 		position: fixed;
 		background-color: $mainDark;
@@ -647,6 +668,7 @@ main{
 			flex-flow: row nowrap;
 			align-items: center;
 			color: $mainLight;
+			padding-left: 2rem;
 			& i{
 				font-size: 2rem;
 				color: $element;
@@ -660,10 +682,10 @@ main{
 			z-index: 5;
 			color: $element;
 			font-size: 2rem;
-			padding: 1rem 1.5rem;
+			padding: 1rem 2rem;
 			transition: all 0.3s ease-out;
 			&.active{
-				color: $mainDark;
+				color: $mainLight;
 				background-color: $element;
 			}
 		}
@@ -691,12 +713,12 @@ main{
 			padding: 0 2rem;
 		}
 		&__link{
-			padding: 1.5rem 0;
-			// border: 1px solid $mainDark;
+			padding: 1rem 0;
 			width: 100%;
 			font-size: 1.5rem;
-			text-align: right;
-			color: $mainDark;
+			line-height: 1.5rem;
+			text-align: center;
+			color: $mainLight;
 			text-transform: uppercase;
 		}
 	}
