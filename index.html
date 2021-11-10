@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/iconsfont.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/form.js"></script>
 </head>
 
 <body>
@@ -69,11 +71,12 @@
 		<main class="mainIndex container">
 			<div class="indexsection">
 				<div class="mainIndex__form">
-					<form class="indexForm" action="">
+					<div class="form-message"></div>
+					<form class="indexForm" id="ajax-contact" method="post" action="mailer.php">
 						<p class="indexForm__text">Оставьте свой номер телефона и мы Вам перезвоним</p>
-						<input class="indexForm__item" type="text" placeholder="Имя">
-						<input class="indexForm__item" type="tel" placeholder="Телефон">
-						<button class="indexForm__item">Перезвоните мне
+						<input class="indexForm__item" name="name" type="text" placeholder="Имя" required>
+						<input class="indexForm__item" name="tel" type="tel" placeholder="Телефон" required>
+						<button type="submit" class="indexForm__item">Перезвоните мне
 							<i class="icon-phone"></i>
 						</button>
 						<p class="policy">политика в отношении <a href="#">обработки персональных данных</a></p>
@@ -94,7 +97,6 @@
 			
 		</footer>
 	</div>
-	<script src="js/script.js"></script>
+	
 </body>
-
 </html>

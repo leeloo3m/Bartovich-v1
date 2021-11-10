@@ -412,7 +412,7 @@ main{
 		box-shadow: 0px 0px 10px 0px $shadowColor;
 		transition: all 0.2s ease;
 		&:hover{
-			box-shadow: 0px 0px 20px 0px $element;
+			box-shadow: 0px 0px 20px 0px $shadowColor;
 		}
 		@media (max-width: 768px){
 			margin: 0.5rem 1rem;
@@ -460,9 +460,6 @@ main{
 		color: $element;
 		transition: all 0.3s ease-out;
 		padding: 1rem 2rem 1rem 0;
-		&:hover{
-			transform: translateX(1rem);
-		}
 		& a{
 			background: none;
 			font-size: 1.2rem;
@@ -482,6 +479,9 @@ main{
 			min-height: 90px;
 		}
 	}
+}
+.brd{
+	transform: translateX(1rem);
 }
 /* MAIN contact ----------------------------------------*/
 .map{

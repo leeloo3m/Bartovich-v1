@@ -669,8 +669,8 @@ main {
 }
 
 .review__wrap:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px brown;
-          box-shadow: 0px 0px 20px 0px brown;
+  -webkit-box-shadow: 0px 0px 20px 0px grey;
+          box-shadow: 0px 0px 20px 0px grey;
 }
 
 @media (max-width: 768px) {
@@ -758,11 +758,6 @@ main {
   padding: 1rem 2rem 1rem 0;
 }
 
-.review__footer:hover {
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
-}
-
 .review__footer a {
   background: none;
   font-size: 1.2rem;
@@ -787,6 +782,11 @@ main {
   .review__text {
     min-height: 90px;
   }
+}
+
+.brd {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
 }
 
 /* MAIN contact ----------------------------------------*/
