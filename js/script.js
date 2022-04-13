@@ -8,5 +8,5 @@ $(document).ready(function(){
 		if ($(this).hover(function () {
 			$(this).find('.review__footer').toggleClass('brd'); //найти элемент внутри выбранного this
 		}));
-	})
+	});	
 })

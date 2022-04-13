@@ -4,65 +4,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Юридические услуги для бизнеса</title>
-	<meta name="description" content="Юридические услуги для бизнеса">
-	<meta name="keywords" content="html, practice, page, bootstrap">
+	<meta name="description" content="Перечень юридических услуг для предприятий и организаций">
+	<meta name="keywords" content="юридические консультации, организация договоров, арбитражный суд, банкротство организаций, регистрация юрлиц, ликвидация юрлиц">
+
 	<link rel="stylesheet" type="text/css" href="css/iconsfont.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="header">
-				<div class="header__logo">
-					<a href="index.html">
-						<img src="img/logo100px.svg" alt="logo">
-					</a>	
-				</div>
-				<div class="header__nav nav">
-					<div class="nav">
-						<a class="nav__item" href="b2c.html"><div>Людям</div></a>
-						<a class="nav__item active" href="b2b.html"><div>Бизнесу</div></a>
-						<a class="nav__item" href="review.html"><div>Отзывы</div></a>
-						<a class="nav__item" href="contact.html"><div>Контакты</div></a>
-					</div>
-				</div>
-				<div class="header__tel">
-					<i class="icon-phone"></i>
-					<span>+7(924)548-33-52</span>	
-				</div>
-				<div class="header__burger">
-					<span></span>
-				</div>	
-			</div>
-			<div class="headermobile">
-				<div class="headermobile__tel">
-					<i class="icon-phone"></i>
-					<span>+7(924)548-33-52</span>
-				</div>
-				<div class="headermobile__burger">
-					<i class="icon-menu"></i>
-				</div>
-				<div class="headermobile__nav">
-					<div class="headermobile__logo">
-						<img src="img/logo100px.svg" alt="logo">
-					</div>
-					<div class="headermobile__list">
-						<a class="headermobile__link active" href="index.html"><div>На главную</div></a>
-						<a class="headermobile__link" href="b2c.html"><div>Людям</div></a>
-						<a class="headermobile__link" href="b2b.html"><div>Бизнесу</div></a>
-						<a class="headermobile__link" href="review.html"><div>Отзывы</div></a>
-						<a class="headermobile__link" href="contact.html"><div>Контакты</div></a>
-					</div>
-					<div class="headermobile__social">
-						<a href="https://www.instagram.com/bartovich_lawyer/" target="_blank"><i class="icon-ig"></i></a>
-						<a href="https://vk.com/bartovich38" target="_blank"><i class="icon-vk"></i></a>
-					</div>
-					
-				</div>
-			</div>
+			<script type="module">
+				import Header from '/js/Header.js';
+				let header = new Header();
+			</script>
 		</header>
+
 		<main class="container">
 			<section>
 				<div class="caption">
@@ -151,12 +111,12 @@
 				</div>
 			</section>
 		</main>
+
 		<footer>
-			<div class="footer__items">
-				<span>2021 Все права защищены</span>
-				<a href="https://www.instagram.com/bartovich_lawyer/" target="_blank"><i class="icon-ig"></i></a>
-				<a href="https://vk.com/bartovich38" target="_blank"><i class="icon-vk"></i></a>
-			</div>	
+			<script type="module">
+				import Footer from '/js/Footer.js';
+				let footer = new Footer();
+			</script>
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
